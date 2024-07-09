@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: blue;
+}
+.main{
+    height: 50px;
+    background-color: white;
+    z-index: 100;
+}
+.logo h2{
+    color: blue;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+    margin-left: 20px;
+    z-index: 100;
+}
+.logo h2 span{
+    color: black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+ul li{
+    list-style: none;
+    margin-top: -10px;
+}
+ul li a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+ul li a:hover{
+    color: rgb(2, 2, 128);
+}
+
+.first{
+    text-align: center;
+    margin-top: 7%;
+}
+.first h1{
+    color: white;
+    font-size: 8rem;
+}
+.first h3{
+    color: black;
+    font-size: 6rem;
+    margin-top: 30px;
+    text-shadow: 0 0 10px white, 0 0 4px white ;
+}
+.first h4{
+    color: white;
+    margin-top: 30px;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 416px) {
+   
+}
+
+
+@media screen and (max-width: 978px) {
+    .main{
+        height: 110px;
+        background-color: black;
+        
+    }
+    .logo > h2{
+        font-size: 1rem;
+        color: blue;
+        margin-bottom: 3px;
+    }
+    .logo > h2 span{
+        font-size: 1rem;
+        color: white;
+    }
+    .main ul{
+        display: block;
+        text-align: end;
+    }
+    .main ul li{
+        margin-top: 1px;
+        margin-left: 20px;
+    }
+    .main ul li a{
+        transition: 1s ease-in-out;
+    }
+    .main ul li a:hover{
+        color: white;
+    }
+}
